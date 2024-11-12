@@ -1,17 +1,22 @@
 <template>
-<WishList></WishList>
+  <WishList></WishList>
+
+  <p>{{ myData }}</p>
 </template>
 
 <script>
-import WishList from "./components/WishList.vue"
-export default { 
+import WishList from "./components/WishList.vue";
+import myData from "./assets/data.js";
+
+export default {
   name: "App",
   data() {
     return {
-    }
+      myData,
+    };
   },
   components: {
-    WishList
+    WishList,
   },
 };
 </script>
